@@ -1,5 +1,5 @@
-import type { Protocol } from 'aws-cdk-lib/lib/aws-ecs';
-import type { Port } from 'aws-cdk-lib/lib/aws-ec2';
+import type { Protocol } from 'aws-cdk-lib/aws-ecs';
+import type { Port } from 'aws-cdk-lib/aws-ec2';
 
 interface TwilioConfig {
   /**
@@ -134,7 +134,7 @@ export interface StackConfig {
    * [Minecraft Docker Server](https://github.com/itzg/docker-minecraft-server/blob/master/README.md)
    * [Minecraft Bedrock Docker](https://github.com/itzg/docker-minecraft-bedrock-server/blob/master/README.md)
    *
-   * @default '{ "EULA": "TRUE" }'
+   * @default '{ "EULA": "TRUE"}'
    */
   minecraftImageEnv: MinecraftImageEnv;
   /**
